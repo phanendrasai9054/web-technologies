@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naukri</title>
+</head>
+<style>
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    h1{
+        text-align: center;
+        background-color:rgb(254, 254, 254);
+    }
+    h2{
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        font-size: large;
+    }
+    fieldset{
+        width: fit-content;
+        margin-left: 35%;
+        margin-top: 2%;
+        border-radius: 12px;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+    }
+</style>
+<body>
+    <h1>NAUKRI.COM</h1>
+    <fieldset>
+        <h2>REGISTRATION FORM</h2>
+        <form>
+            <label for="fname">Name:</label>
+            <input type="text" name="fname" id="fname" required>
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="pswd">Password:</label>
+            <input type="text" name="pswd" id="pswd" required>
+            <br><br>
+            <label for="phn">Mobile No:</label>
+            <input type="number" name="phn" id="phn">
+            <br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender"  value="Male" id="Male">
+            <label for="Gender">Male</label>
+            <input type="radio" name="Gender" value="Female" id="Female">
+            <label for="Gender">Female</label>
+            <input type="radio" name="Gender" value="Other" id="Other">
+            <label for="Gender">Other</label>
+            <br><br>
+            <label for="Wrkst" required>Workstatus:</label>
+            <select name="wrkst" id="wrkst">
+                <option value="0">Fresher</option>
+                <option value="1">Experienced</option>
+            </select>
+            <br><br>
+            <label for="resume">Add your Resume:</label>
+            <input type="file" name="resume" id="resume">
+            <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Register">
+        </form>
+    </fieldset>
+</body>
+</html>

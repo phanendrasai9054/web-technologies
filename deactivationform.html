@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Deactivation Form</title>
+    <style>
+        body{
+            font-size: large;
+            padding: 20px;
+        }
+        input[type="submit"],input[type="reset"] {
+            padding: 4px;
+            margin: 8px;
+        }
+        h1{
+            text-align: center;
+            background-color: #577a85;
+        }
+        fieldset{
+            width: fit-content;
+            margin-left: 34%;
+            border-radius: 12px;
+        }
+        form{
+            text-align: center;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>LinkedIn Deactivation Form</h1><br>
+    <form>
+        <fieldset><br>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="lid">LinkedIn Id:</label>
+            <input type="text" name="lid" id="lid" required><br><br>
+            <label for="TD">Deactivation:</label>
+            <select name="TD" id="TD" required>
+                <option value="">Select options</option>
+                <option value="Temporarily disable">Temporarily disable</option>
+                <option value="Permanently disable">Permanently disable</option>
+            </select><br><br>
+            <label for="reason">Reason for Deactivation:</label>
+            <select name="reason" id="reason" required>
+                <option value="">Select a reason</option>
+                <option value="privacy_concerns">Privacy Concerns</option>
+                <option value="too_many_notifications">Too Many Notifications</option>
+                <option value="no_longer_use">No Longer Use LinkedIn</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="comments">Additional Comments (optional):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Deactivate Account">
+    </form>
+</body>
+</html>
